@@ -1,0 +1,85 @@
+/*
+Theme Name: Constructivism
+Description: Constructivist style wordpress theme.
+Version: 0.2
+Tags: red, black, two-columns, fixed-width
+Author: Thomas Reggi
+Author URI: http://www.reggi.com
+License: All Rights Reserved
+The CSS, XHTML and design is released under GPL:
+http://www.opensource.org/licenses/gpl-license.php
+*/
+-------------------------------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/  v1.0 | 20080212 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0;}body{margin:0px;line-height:1;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}:focus{outline:0;}ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}
+@font-face { 
+font-family: 'league_gothic';
+src: url('fonts/league_gothic.eot');
+src: local('league_gothic'), url('fonts/league_gothic.otf') format('opentype'), url("fonts/league_gothic.svg#lg") format('svg');}
+body{font-family:sans-serif;background: url(images/333333.png);color:#333333}
+abbr{border:none;}
+select{width:100%}
+img{border:none;}
+a:link, a:visited, a:active{color:#DF351B;outline:none;text-decoration:none;}
+a:hover{color:#000000;text-decoration:none;}
+ol, ul, h2{margin:0px;padding:0px;}
+p{line-height:18px;padding:0px 0px 10px 0px; margin:0px;}
+/* skeleton */
+.float{float:left;display:inline}
+.background{width:800px;background: url(images/DF351B.png);position:absolute;left: 50%;top:20px; margin-left: -420px;}
+.container{width:840px;background:transparent;position: relative;left: 50%;margin:0px 0px 0px -420px;}
+.masthead{width:780px;background:transparent;padding:0px 10px 0px 10px; margin:-11px 0px 0px 20px;height:85px;}
+.posts{width:620px;margin:0px 20px 0px 0px;}
+.post{width:600px; background:#F4F4F4;margin:0px 0px 20px 0px; padding:10px 10px 10px 10px;font-size:12px; text-shadow: 0px 1px #fff;}
+.sidebar_items{width:200px;}
+.sidebar_item{width:180px;background:#F4F4F4;margin:0px 0px 20px 0px;padding:10px 10px 10px 10px;text-shadow: 0px 1px #fff;}
+.sidebar_item ul, .sidebar_item li {list-style:none;}
+.mastfooter{width:820px;background:#F4F4F4;padding:10px 10px 10px 10px; margin:0px 0px 00px 0px;font-size:12px}
+.footer_left{width:50%; text-align:left}
+.footer_right{width:50%;text-align:right;}
+/* typeography */
+.blog_title{font-family: 'league_gothic', sans-serif; text-transform:uppercase; font-size:90px;text-shadow: 0px 1px #333;}
+.blog_title a{color:#333333;outline:none;text-decoration:none;}
+h2, .widget_title{font-family: 'league_gothic', sans-serif; text-transform:uppercase; font-size:30px;font-weight:normal;text-shadow: 0px 1px #fff; }
+.meta_data{font-size:12px;margin:5px 0px 0px 0px;padding:0px;}
+.meta_data div{float:left; display: inline; width:200px;background:#E6E6E6}
+.meta_categorys{text-align:left;text-transform:capitalize;}
+.meta_comments{text-align:center;}
+.meta_author{text-align:right;text-transform:capitalize;}
+/* wordpress classes */
+.posts ol {margin:0px 5px 5px 32px;padding:0px 5px 5px 5px;font-size:14px;}
+.posts ul {margin:0px 5px 5px 25px;padding:0px 5px 5px 5px;font-size:14px;}
+.wp-caption {background-color:#FFFFFF;border:solid 1px #DDDDDD;padding-top:5px;text-align:center;}
+img.alignright, img.alignleft, img.aligncenter {background-color:#FFFFFF;border:solid 1px #DDDDDD;padding:5px;}
+.wp-caption-text{padding:2px 0px 2px 0px;}
+img.alignright {float:right; margin:5px 0 5px 5px}
+img.alignleft {float:left; margin:5px 5px 5px 0}
+img.aligncenter {display:block;margin: 5px auto 5px auto}
+.wp-caption.alignright {float:right; margin:2px 0 2px 5px}
+.wp-caption.alignleft {float:left; margin:2px 5px 2px 0}
+.wp-caption.aligncenter {display:block;margin: 2px auto 0px auto;}
+blockquote {font-family: 'Georgia', sans-serif; font-size:16px; ;font-style: italic;padding:0px 0px 0px 0px;}
+blockquote cite,blockquote em,blockquote i {font-style: normal;}
+blockquote p{line-height:23px;letter-spacing:1px;margin:0px;padding:0px;text-shadow: 0px 1px #fff; }
+/* css3 */
+.post, .sidebar_item, .background, .mastfooter{
+box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+-o-box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+-moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5);}
+.sidebar_item a{
+background:#E6E6E6;color:#333333;font-family: 'Georgia', sans-serif;font-style:italic;font-size:16px;
+text-align:center;text-transform:lowercase;width:100%;
+margin:10px 0px 10px 0px;padding:3px 0px 3px 0px;
+display:block;position:relative;width:100%;
+border:solid 1px #D9D9D9;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+.sidebar_item a:hover{background-color:#333;color:#FFFFFF;text-decoration:none;text-shadow: 0px 1px #666;}
+ .post-edit {float:left;display:inline;}
+
+
+
+
